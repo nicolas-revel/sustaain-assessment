@@ -53,3 +53,8 @@ yarn-error.log*
 # Cache
 .cache/
 .npm
+
+# Docker
+.env
+.env.local
+docker-compose.override.yml
