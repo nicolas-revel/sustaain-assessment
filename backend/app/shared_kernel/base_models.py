@@ -1,6 +1,5 @@
 from datetime import datetime
-from typing import Optional
-from sqlalchemy import Column, Integer, DateTime, String
+from sqlalchemy import Column, Integer, DateTime
 from sqlalchemy.sql import func
 from pydantic import BaseModel, Field, ConfigDict
 from .database import Base
