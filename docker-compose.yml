@@ -34,6 +34,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - DATABASE_URL=postgresql://sustaain:sustaain_dev_password@postgres:5432/sustaain_db
+      - DEBUG=${DEBUG:-True}
     depends_on:
       postgres:
         condition: service_healthy
