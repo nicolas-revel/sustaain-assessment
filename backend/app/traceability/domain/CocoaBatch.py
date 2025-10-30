@@ -2,9 +2,9 @@ from datetime import datetime
 from typing import List
 from uuid import UUID
 
-from backend.app.traceability.domain import Quantity, Location, BatchStatus
-from backend.app.traceability.domain.TransportMode import TransportMode
-from backend.app.traceability.domain.TrackingEntry import TrackingEntry
+from app.traceability.domain import Quantity, Location, BatchStatus
+from app.traceability.domain.TransportMode import TransportMode
+from app.traceability.domain.TrackingEntry import TrackingEntry
 
 class CocoaBatch:
     def __init__(

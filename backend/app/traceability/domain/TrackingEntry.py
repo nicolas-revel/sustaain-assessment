@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
 
-from backend.app.traceability.domain import Location
-from backend.app.traceability.domain.TransportMode import TransportMode
+from app.traceability.domain import Location
+from app.traceability.domain.TransportMode import TransportMode
 
 
 @dataclass(frozen=True)

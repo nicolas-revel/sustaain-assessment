@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from .shared_kernel import config, init_db
+from .traceability.infrastructure.api.TraceabilityRouter import router as traceability_router
 
 
 @asynccontextmanager
@@ -41,6 +42,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(traceability_router, prefix="/api")
 
 
 @app.get("/")
